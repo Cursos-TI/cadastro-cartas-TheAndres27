@@ -56,7 +56,11 @@ nome_cidade1[strcspn(nome_cidade1, "\n")] = '\0';
     PerCapita1 = (pib1 * 1000000000) / populacao1;
 
 
-    superpoder1 = (float)populacao1 + area1 + pib1 + ponto_turisticos1 + PerCapita1 + (1.0f / densidade_populacional1);
+    superpoder1 = (float)populacao1 
+        + area1 + 
+        pib1 + 
+        ponto_turisticos1 + 
+        PerCapita1 + (1.0f / densidade_populacional1);
 
 
 
@@ -87,7 +91,11 @@ nome_cidade2[strcspn(nome_cidade2, "\n")] = '\0';
      densidade_populacional2 = populacao2 / area2 ;
      PerCapita2 = (pib2 * 1000000000) / populacao2;
 
-    superpoder2 = (float)populacao2 + area2 + pib2 + ponto_turisticos2 + PerCapita2 + (1.0f / densidade_populacional2);
+    superpoder2 = (float)populacao2 +
+        area2 + 
+        pib2 +
+        ponto_turisticos2 + 
+        PerCapita2 + (1.0f / densidade_populacional2);
 
 
     //Mostrando carta 1
@@ -134,5 +142,6 @@ nome_cidade2[strcspn(nome_cidade2, "\n")] = '\0';
     printf("Super Poder: Carta1 vence(%d)\n", superpoder1 > superpoder2);
     //fim do programa
     return 0;
+
 
 }
